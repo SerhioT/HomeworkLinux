@@ -1,0 +1,30 @@
+#!/bin/bash
+
+for run in {1..10}
+do
+echo $run
+date +“%H:%M:%S”
+sleep 5
+done
+for run in {1..10}
+do
+echo $run
+date +“%H:%M:%S”
+sleep 1
+done
+ps -e | wc -l
+touch Task19_10/cpuinfo.txt
+cat /proc/cpuinfo >> Task19_10/cpuinfo.txt
+cat /etc/os-release | grep -w NAME >> Task19_10/cpuinfo.txt
+cat /etc/os-release | grep -w NAME | awk '{print $1}'| sed 's/NAME="//' >> Task19_$
+cd  Tak19_10/
+for run in {50..100}
+do
+touch $run.txt
+done
+
+
+
+
+
+
